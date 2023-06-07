@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>Insert title here</title>
+<title>Insert title here 에전 스타일 </title>
 <script>
 	var httpRequest = null;
 	
@@ -25,9 +25,9 @@
 		httpRequest.send(null);
 		
 		function responseMsg() {
-			//4단계 : 서버에서 응답한 결과를 처리
+			//Ajax 상태 코드 4단계 : 서버에서 응답한 결과를 처리
 			// 서버에서 응답을 완료했고, 올바른 응답 결과가 날아온 경우
-			if( httpRequest.readyState == 4 ) {
+			if( httpRequest.readyState == 4 ) { 
 				if( httpRequest.status == 200 ) {
 					
 					//5단계 : 서버에서 날아온 응답 결과를 client 브라우저에 적용

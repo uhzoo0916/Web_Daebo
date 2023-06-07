@@ -19,17 +19,17 @@
 		sendRequest("Post", 'sample.jsp', null, callback);
 	}
 	
-	function callback() {
+	function callback() { //callback 함수에서 처리 
 		var msg = '';
 		if(httpRequest.readyState == 4) {
 			if(httpRequest.status == 200) {
-				//var memberList = JSON.parse(httpRequest.responseText);
-				var memberList = eval(httpRequest.responseText);
+				//var memberList = JSON.parse(httpRequest.responseText); 제이손 스타일(배열)로 파싱에서 변환 
+				var memberList = eval(httpRequest.responseText); 
 				msg += '회원수 : ' + memberList.length + "명\n";
 				for(var i = 0; i < memberList.length; i++) {
-					var mem = memberList[i]	;
-					var id = mem.id;
-					var name = mem.name;
+					var mem = memberList[i]	; ///key 값이 id와 name ((samle.jsp)) 0번, 1번, 2번 
+					var id = mem.id; //id 값 꺼내줘
+					var name = mem.name; //nmae 값 꺼내줘 
 					msg += id + '(' + name + ')\n';
 				}
 			}

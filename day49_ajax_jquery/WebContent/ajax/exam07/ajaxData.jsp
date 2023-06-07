@@ -7,7 +7,7 @@
 
 	//ajaxData.jsp 
 
-	request.setCharacterEncoding("euc-kr");
+	request.setCharacterEncoding("EUC-KR");
 	String name = request.getParameter("name");
 	String orderNum = request.getParameter("orderNum");
 	

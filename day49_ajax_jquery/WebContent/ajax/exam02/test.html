@@ -16,21 +16,21 @@
 		}
 	}
 
-	function clearOnClick() {
+	function clearOnClick() { //debug 공간을 초기화 
 		var debug = document.getElementById("debug");
 		debug.value = "";
 	}
 	
-	function sendProcess(params) {
+	function sendProcess(params) { 
 		
-		var msg = "";
+		var msg = ""; //변수 초기화 
 		msg += "----------------------------\n";
 //		var url = "/Web_Lecture/ajax/exam02/param.html?name=" + params;
 //		var url = "param.html?name=" + params;
 //		var url = "param.jsp?name=" + params;
-		var url = "param.jsp?name=" + encodeURIComponent(params);
-		msg += url + "\n";
-		debugTrace(msg);
+		var url = "param.jsp?name=" + encodeURIComponent(params); //param 의 jsp 파일에 get 방식으로 너가 넘긴 값에 대해 URIComponent 함수
+		msg += url + "\n"; // 위에 정의 되어있는걸 붙여넣기 
+		debugTrace(msg); //user method 
 		
 		httpRequest = getXMLHttpRequest();
 		

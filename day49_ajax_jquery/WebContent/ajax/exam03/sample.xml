@@ -3,7 +3,7 @@
 	<member>
 		<id>hong</id>
 		<name>홍길동</name>
-	</member>
+	</member> 
 	<member>
 		<id>kim</id>
 		<name>김철수</name>
@@ -11,5 +11,9 @@
 	<member>
 		<id>lee</id>
 		<name>이도연</name>
+	</member>
+	<member>
+		<id>YOU</id>
+		<name>현주 </name>
 	</member>
 </members>
